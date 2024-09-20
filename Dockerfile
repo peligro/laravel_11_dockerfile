@@ -28,9 +28,9 @@ COPY . .
 RUN composer install
 RUN composer require laravel/octane spiral/roadrunner
 RUN composer require laravel/octane spiral/roadrunner
-RUN composer require phpmailer/phpmailer
-RUN composer require phpoffice/phpspreadsheet
-RUN composer require endroid/qr-code
+#RUN composer require phpmailer/phpmailer
+#RUN composer require phpoffice/phpspreadsheet
+#RUN composer require endroid/qr-code
 COPY .envDev .env
 RUN mkdir -p /app/storage/logs
 
